@@ -1,0 +1,17 @@
+name: BattlePass
+version: 1.0.0
+main: dev.battlepass.BattlePassPlugin
+api-version: "1.20"
+description: Мрачный боевой пропуск с заданиями и внутриигровой настройкой наград
+commands:
+  battlepass:
+    aliases: [bp, pass]
+    description: Боевой пропуск (для админов: edit, reload, givexp, reset)
+    usage: /<command> [quests|edit|reload|givexp|reset|help]
+permissions:
+  battlepass.use:
+    description: Открывать боевой пропуск
+    default: true
+  battlepass.admin:
+    description: Редактор, reload, givexp и reset
+    default: op
